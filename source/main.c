@@ -21,7 +21,7 @@ int main(int argc, char **argv)
       		frames = frames + 1;
     	}else{
 			consoleClear();
-      		printf("FPS: %d\n", frames);
+      		printf("\x1b[22;36HFPS: %d\n", frames);
       		gettimeofday(&secTime, NULL);
       		frames = 0;
     	}
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		u32 kDown = hidKeysDown(CONTROLLER_P1_AUTO);
 
 		if (kDown & KEY_PLUS) break; // break in order to return to hbmenu
-
+		
 		gfxFlushBuffers();
 		//gfxSwapBuffers();
 		//gfxWaitForVsync();
