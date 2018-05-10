@@ -35,6 +35,9 @@ SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 EXEFS_SRC	:=	exefs_src
+ICON		:=  icon.jpg
+APP_AUTHOR  :=  Donut
+APP_VERSION :=  1.0.0
 
 #---------------------------------------------------------------------------------
 # options for code generation
